@@ -1,0 +1,4 @@
+core
+====
+
+Scalable JS architecture
