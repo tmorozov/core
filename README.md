@@ -28,3 +28,4 @@ TODO
 * implement module#stop
 * implement sub-modules
 * improve test coverage
+* code examples in readme
