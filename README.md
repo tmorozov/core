@@ -41,6 +41,15 @@ Include order of files
 <script src="/javascripts/modules/toolbar/main.js"></script>
 ```
 
+If module consists of many files, you should manage order by hand. For example if view depends on collection,
+collection depends on model, you could include them as here
+```html
+<script src="/javascripts/modules/contacts/model.js"></script>
+<script src="/javascripts/modules/contacts/collection.js"></script>
+<script src="/javascripts/modules/contacts/view.js"></script>
+<script src="/javascripts/modules/contacts/main.js"></script>
+```
+
 Example with DHTMLX as base library. [core + DHTMLX](https://github.com/tmorozov/dhtmlx-node)
 
 TODO
