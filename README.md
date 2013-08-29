@@ -21,6 +21,26 @@ I used #extend from [underscorejs](http://underscorejs.org/).
 Syntax for application/modules looks like in [marionettejs](http://marionettejs.com/), but I've introduced sandbox(extendable).
 No external dependancies as for now. Could be used with different Base libraries.
 
+Include order of files
+----------------------
+
+1. include 3 party libs
+2. include core.js
+3. include sandbox extensions (if any)
+4. include app definition
+5. include modules (as modules depend on sundbox & application)
+
+```html
+<script src="/javascripts/3_party_lib.js"></script>
+<script src="/javascripts/core.js"></script>
+<script src="/javascripts/sandbox_extension.js"></script>
+<script src="/javascripts/app.js"></script>
+<script src="/javascripts/modules/contacts/main.js"></script>
+<script src="/javascripts/modules/details/main.js"></script>
+<script src="/javascripts/modules/menu/main.js"></script>
+<script src="/javascripts/modules/toolbar/main.js"></script>
+```
+
 Example with DHTMLX as base library. [core + DHTMLX](https://github.com/tmorozov/dhtmlx-node)
 
 TODO
